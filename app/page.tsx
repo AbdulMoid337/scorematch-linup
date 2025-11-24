@@ -73,7 +73,7 @@ export default function Home() {
             href="/lineup"
             className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-blue-600 px-10 font-bold text-white shadow-2xl transition-all duration-300 hover:bg-blue-500 hover:scale-105 hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900"
           >
-            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:transform-[skew(-12deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-white/20"></div>
             </div>
             <span className="mr-2 text-sm uppercase tracking-widest">
@@ -99,7 +99,7 @@ export default function Home() {
             href="/compare"
             className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-slate-800 border border-slate-700 px-10 font-bold text-white shadow-2xl transition-all duration-300 hover:bg-slate-700 hover:scale-105 hover:border-purple-500/50 hover:shadow-purple-500/20 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-slate-900"
           >
-            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:transform-[skew(-12deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-white/5"></div>
             </div>
             <span className="mr-2 text-sm uppercase tracking-widest">
@@ -133,7 +133,7 @@ export default function Home() {
         ) : (
           <div className="text-center py-12">
             <p className="text-xl text-slate-500">
-              No players found matching "{searchQuery}"
+              No players found matching {searchQuery}
             </p>
           </div>
         )}

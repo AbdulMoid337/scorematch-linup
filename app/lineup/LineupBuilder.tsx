@@ -3,7 +3,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { players } from "../data";
 
-// Types
 type PlayerData = {
   behavior: string;
   level: number;
@@ -17,8 +16,6 @@ type Player = {
   data: PlayerData;
 };
 
-// Normalize player data
-// The data structure in data.ts is an array containing a single object
 const allPlayersObj = players[0] as unknown as Record<string, PlayerData>;
 const normalizedPlayers: Player[] = Object.entries(allPlayersObj).map(
   ([name, data]) => ({
@@ -198,7 +195,6 @@ const FORMATIONS: Record<
 
 export default function LineupBuilder() {
   const [formation, setFormation] = useState("4-4-2");
-  // Lineup stores which player (by ID) is in which position index (0-10)
   const [lineup, setLineup] = useState<Record<number, string>>({});
   const [draggedPlayer, setDraggedPlayer] = useState<string | null>(null);
   const [draggedFromPos, setDraggedFromPos] = useState<number | null>(null);
@@ -208,17 +204,20 @@ export default function LineupBuilder() {
   useEffect(() => {
     const savedLineup = localStorage.getItem("scorematch-lineup");
     const savedFormation = localStorage.getItem("scorematch-formation");
-    if (savedLineup) {
-      try {
-        setLineup(JSON.parse(savedLineup));
-      } catch (e) {
-        console.error("Failed to parse saved lineup", e);
+
+    setTimeout(() => {
+      if (savedLineup) {
+        try {
+          setLineup(JSON.parse(savedLineup));
+        } catch (e) {
+          console.error("Failed to parse saved lineup", e);
+        }
       }
-    }
-    if (savedFormation) {
-      setFormation(savedFormation);
-    }
-    setIsInitialized(true);
+      if (savedFormation) {
+        setFormation(savedFormation);
+      }
+      setIsInitialized(true);
+    }, 0);
   }, []);
 
   useEffect(() => {
