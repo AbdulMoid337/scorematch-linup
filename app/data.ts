@@ -146,6 +146,20 @@ export const players = [
         Response: 30,
       },
     },
+    roberts: {
+      behavior: "Menace",
+      level: 10,
+      description:
+        "Always dangerous in front of goal, whether near or far, ground or air",
+      statistics: {
+        Speed: 35,
+        Height: 25,
+        Strength: 30,
+        Power: 30,
+        Skill: 20,
+        Response: 30,
+      },
+    },
 
     cook: {
       behavior: "Juggernaut",
@@ -352,6 +366,20 @@ export const players = [
       },
     },
     Joowon: {
+      behavior: "Intruder",
+      level: 10,
+      description:
+        "Stretches teams with his running power. Wins races up and down the field.",
+      statistics: {
+        Speed: 45,
+        Height: 15,
+        Strength: 20,
+        Power: 10,
+        Skill: 15,
+        Response: 30,
+      },
+    },
+    babangida: {
       behavior: "Intruder",
       level: 10,
       description:
@@ -843,6 +871,20 @@ export const players = [
       },
     },
     koto: {
+      behavior: "GK-sweeper",
+      level: 10,
+      description:
+        "A Goal keeper that stays on his toes, ready for action. Can build and support from the back",
+      statistics: {
+        Speed: 35,
+        Height: 20,
+        Strength: 20,
+        Power: 30,
+        Skill: 35,
+        Response: 50,
+      },
+    },
+    flores: {
       behavior: "GK-sweeper",
       level: 10,
       description:
