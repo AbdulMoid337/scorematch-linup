@@ -1,3 +1,5 @@
+import { Joti_One } from "next/font/google";
+
 export const players = [
   {
     abubakar: {
@@ -31,6 +33,20 @@ export const players = [
     },
 
     Pinela: {
+      behavior: "Guard",
+      level: 10,
+      description:
+        "Reliable, effective player. Makes simple passes and wins the ball quickly!",
+      statistics: {
+        Speed: 30,
+        Height: 20,
+        Strength: 35,
+        Power: 10,
+        Skill: 15,
+        Response: 40,
+      },
+    },
+    Davies: {
       behavior: "Guard",
       level: 10,
       description:
@@ -148,6 +164,20 @@ export const players = [
         Response: 40,
       },
     },
+    Nacho: {
+      behavior: "Protector",
+      level: 10,
+      description:
+        "A natural ball winner. Thinks before playing the ball out of danger.",
+      statistics: {
+        Speed: 30,
+        Height: 40,
+        Strength: 30,
+        Power: 10,
+        Skill: 20,
+        Response: 40,
+      },
+    },
 
     Cabrera: {
       behavior: "Explorer",
@@ -164,6 +194,20 @@ export const players = [
       },
     },
     ramalho: {
+      behavior: "Explorer",
+      level: 10,
+      description:
+        "Adventurous but diciplined! Can play in any role asked of him",
+      statistics: {
+        Speed: 40,
+        Height: 25,
+        Strength: 20,
+        Power: 10,
+        Skill: 10,
+        Response: 35,
+      },
+    },
+    nazari: {
       behavior: "Explorer",
       level: 10,
       description:
@@ -222,6 +266,20 @@ export const players = [
         Response: 50,
       },
     },
+    Ortiz: {
+      behavior: "Prowler",
+      level: 10,
+      description:
+        "Latches onto passes and crosses like no other. Always ready to strike.",
+      statistics: {
+        Speed: 35,
+        Height: 15,
+        Strength: 15,
+        Power: 25,
+        Skill: 15,
+        Response: 50,
+      },
+    },
 
     Jones: {
       behavior: "Hero",
@@ -237,7 +295,21 @@ export const players = [
       },
     },
 
-    bebo: {
+    Kuvalchuk: {
+      behavior: "Intruder",
+      level: 10,
+      description:
+        "Stretches teams with his running power. Wins races up and down the field.",
+      statistics: {
+        Speed: 45,
+        Height: 15,
+        Strength: 20,
+        Power: 10,
+        Skill: 15,
+        Response: 30,
+      },
+    },
+    Joowon: {
       behavior: "Intruder",
       level: 10,
       description:
@@ -282,7 +354,21 @@ export const players = [
       },
     },
 
-    ali: {
+    horvath: {
+      behavior: "Commander",
+      level: 10,
+      description:
+        "Exellent leader of the game. Swoops in at the crucial time with calculated force.",
+      statistics: {
+        Speed: 20,
+        Height: 50,
+        Strength: 40,
+        Power: 5,
+        Skill: 0,
+        Response: 50,
+      },
+    },
+    segura: {
       behavior: "Commander",
       level: 10,
       description:
@@ -490,6 +576,20 @@ export const players = [
     },
 
     budak: {
+      behavior: "Architect",
+      level: 10,
+      description:
+        "A Player with great vision. He can create opportunities other players can't see.",
+      statistics: {
+        Speed: 30,
+        Height: 15,
+        Strength: 15,
+        Power: 10,
+        Skill: 50,
+        Response: 20,
+      },
+    },
+    Ricci: {
       behavior: "Architect",
       level: 10,
       description:
