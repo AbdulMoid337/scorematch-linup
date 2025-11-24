@@ -33,7 +33,7 @@ export default function ComparePage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-500/30">
       {/* Background Effects */}
-      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black pointer-events-none" />
+      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black pointer-events-none" />
 
       <div className="relative z-10 container mx-auto px-4 py-8 max-w-5xl">
         {/* Header */}
@@ -58,7 +58,7 @@ export default function ComparePage() {
             </svg>
             Back to Collection
           </Link>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tighter uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl font-black tracking-tighter uppercase bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-purple-500 drop-shadow-lg">
             Versus Mode
           </h1>
           <p className="mt-2 text-slate-400 font-medium">
@@ -112,7 +112,7 @@ export default function ComparePage() {
             <div className="grid grid-cols-2 border-b border-white/5">
               <div className="p-8 border-r border-white/5 flex flex-col items-center text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-blue-500" />
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center mb-4 ring-4 ring-blue-500/20 shadow-lg">
+                <div className="w-24 h-24 rounded-full bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center mb-4 ring-4 ring-blue-500/20 shadow-lg">
                   <span className="text-3xl font-black text-white">
                     {p1Data.level}
                   </span>
@@ -127,7 +127,7 @@ export default function ComparePage() {
 
               <div className="p-8 flex flex-col items-center text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-purple-500" />
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center mb-4 ring-4 ring-purple-500/20 shadow-lg">
+                <div className="w-24 h-24 rounded-full bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center mb-4 ring-4 ring-purple-500/20 shadow-lg">
                   <span className="text-3xl font-black text-white">
                     {p2Data.level}
                   </span>
@@ -153,8 +153,6 @@ export default function ComparePage() {
                 const maxStat = 50;
                 const p1Percent = Math.min((val1 / maxStat) * 100, 100);
                 const p2Percent = Math.min((val2 / maxStat) * 100, 100);
-
-                const diff = val1 - val2;
 
                 return (
                   <div key={stat} className="relative">
