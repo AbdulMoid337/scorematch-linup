@@ -60,6 +60,34 @@ export const players = [
         Response: 40,
       },
     },
+    bechet: {
+      behavior: "Guard",
+      level: 10,
+      description:
+        "Reliable, effective player. Makes simple passes and wins the ball quickly!",
+      statistics: {
+        Speed: 30,
+        Height: 20,
+        Strength: 35,
+        Power: 10,
+        Skill: 15,
+        Response: 40,
+      },
+    },
+    eriksson: {
+      behavior: "Guard",
+      level: 10,
+      description:
+        "Reliable, effective player. Makes simple passes and wins the ball quickly!",
+      statistics: {
+        Speed: 30,
+        Height: 20,
+        Strength: 35,
+        Power: 10,
+        Skill: 15,
+        Response: 40,
+      },
+    },
 
     Zivcovic: {
       behavior: "Composer",
@@ -295,7 +323,7 @@ export const players = [
       },
     },
 
-    Kuvalchuk: {
+    kovalchuk: {
       behavior: "Intruder",
       level: 10,
       description:
@@ -397,7 +425,7 @@ export const players = [
       },
     },
 
-    kabeer: {
+    dubois: {
       behavior: "Speedster",
       level: 10,
       description:
@@ -417,6 +445,47 @@ export const players = [
       level: 9,
       description:
         "Powerful and precise! Love to shoot but happy to play the ball to his teammates.",
+      statistics: {
+        Speed: 27,
+        Height: 19,
+        Strength: 23,
+        Power: 23,
+        Skill: 37,
+        Response: 18,
+      },
+    },
+    santos: {
+      behavior: "Producer",
+      level: 9,
+      description:
+        "Powerful and precise! Love to shoot but happy to play the ball to his teammates.",
+      statistics: {
+        Speed: 27,
+        Height: 19,
+        Strength: 23,
+        Power: 23,
+        Skill: 37,
+        Response: 18,
+      },
+    },
+    camara: {
+      behavior: "Producer",
+      level: 9,
+      description:
+        "Powerful and precise! Love to shoot but happy to play the ball to his teammates.",
+      statistics: {
+        Speed: 27,
+        Height: 19,
+        Strength: 23,
+        Power: 23,
+        Skill: 37,
+        Response: 18,
+      },
+    },
+    hakan: {
+      behavior: "Gatecrasher",
+      level: 9,
+      description: "Quick, creative and comfortable in the opponents area.",
       statistics: {
         Speed: 27,
         Height: 19,
@@ -485,8 +554,34 @@ export const players = [
         Response: 18,
       },
     },
+    bartosz: {
+      behavior: "Infiltrator",
+      level: 9,
+      description: "Can pick out teammate, but loves to run past his opponents",
+      statistics: {
+        Speed: 37,
+        Height: 19,
+        Strength: 14,
+        Power: 14,
+        Skill: 23,
+        Response: 18,
+      },
+    },
+    Jensen: {
+      behavior: "Infiltrator",
+      level: 9,
+      description: "Can pick out teammate, but loves to run past his opponents",
+      statistics: {
+        Speed: 37,
+        Height: 19,
+        Strength: 14,
+        Power: 14,
+        Skill: 23,
+        Response: 18,
+      },
+    },
 
-    Jovan: {
+    Novak: {
       behavior: "Hammer",
       level: 10,
       description:
@@ -677,8 +772,22 @@ export const players = [
         Response: 50,
       },
     },
+    koto: {
+      behavior: "GK-sweeper",
+      level: 10,
+      description:
+        "A Goal keeper that stays on his toes, ready for action. Can build and support from the back",
+      statistics: {
+        Speed: 35,
+        Height: 20,
+        Strength: 20,
+        Power: 30,
+        Skill: 35,
+        Response: 50,
+      },
+    },
 
-    schimtd: {
+    schmidt: {
       behavior: "Keeper",
       level: 10,
       description:
@@ -692,7 +801,21 @@ export const players = [
         Response: 40,
       },
     },
-    dd: {
+    Lopez: {
+      behavior: "Gk-stopper",
+      level: 10,
+      description:
+        "This goalkeeper is well balanced. He is both adventurous and reliable",
+      statistics: {
+        Speed: 25,
+        Height: 35,
+        Strength: 25,
+        Power: 40,
+        Skill: 40,
+        Response: 40,
+      },
+    },
+    Romereo: {
       behavior: "Gk-stopper",
       level: 10,
       description:
