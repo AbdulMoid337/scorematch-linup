@@ -771,6 +771,20 @@ export const players = [
         Response: 20,
       },
     },
+    tanaka: {
+      behavior: "Speedster",
+      level: 10,
+      description:
+        "Uses blistiring speed to create goal scoring opportunities for himself.",
+      statistics: {
+        Speed: 50,
+        Height: 10,
+        Strength: 15,
+        Power: 15,
+        Skill: 10,
+        Response: 20,
+      },
+    },
 
     cernat: {
       behavior: "GK-sweeper",
