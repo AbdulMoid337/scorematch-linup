@@ -29,7 +29,7 @@ const StatBar = ({ label, value }: { label: string; value: number }) => (
     </div>
     <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
       <div
-        className="h-full rounded-full bg-linear-to-r from-blue-500 to-cyan-400 transition-all duration-500"
+        className="h-full rounded-full bg-linear-to-r from-blue-500 to-cyan-400 transition-all duration-500 group-hover:shadow-[0_0_8px_rgba(56,189,248,0.6)]"
         style={{ width: `${Math.min(Math.max(value, 0), 50) * 2}%` }} // Assuming stats go up to roughly 50 based on data
       />
     </div>
@@ -40,7 +40,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ name, data }) => {
   const { behavior, level, description, statistics } = data;
 
   return (
-    <div className="group relative flex w-full max-w-sm flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl dark:border-gray-800 dark:bg-gray-900">
+    <div className="group relative flex w-full max-w-sm flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl dark:border-gray-800 dark:bg-gray-900 cursor-pointer hover:ring-2 hover:ring-blue-500/20 active:scale-95">
       {/* Card Header */}
       <div className="bg-linear-to-br from-slate-800 to-slate-900 p-6 text-white">
         <div className="flex items-center justify-between">
