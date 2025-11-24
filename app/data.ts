@@ -149,7 +149,21 @@ export const players = [
       },
     },
 
-    Adolf: {
+    Cabrera: {
+      behavior: "Explorer",
+      level: 10,
+      description:
+        "Adventurous but diciplined! Can play in any role asked of him",
+      statistics: {
+        Speed: 40,
+        Height: 25,
+        Strength: 20,
+        Power: 10,
+        Skill: 10,
+        Response: 35,
+      },
+    },
+    ramalho: {
       behavior: "Explorer",
       level: 10,
       description:
