@@ -294,21 +294,6 @@ export const players = [
       },
     },
 
-    Majid: {
-      behavior: "Hammer",
-      level: 10,
-      description:
-        "Easy to find.Difficult to stop. Uses power to dominate his opponent.",
-      statistics: {
-        Speed: 20,
-        Height: 40,
-        Strength: 45,
-        Power: 40,
-        Skill: 5,
-        Response: 20,
-      },
-    },
-
     Badr: {
       behavior: "Prowler",
       level: 10,

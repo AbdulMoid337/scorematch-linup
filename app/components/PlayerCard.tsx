@@ -1,4 +1,38 @@
 import React from "react";
+import {
+  Zap,
+  Shield,
+  Crosshair,
+  Swords,
+  Wand2,
+  Hammer,
+  Map,
+  Ghost,
+  Medal,
+  Plane,
+  User,
+  Scale,
+  Bird,
+  TriangleRight,
+  Car,
+  TriangleAlert,
+  Star,
+  CloudRain,
+  Forklift,
+  Flag,
+  Skull,
+  Panda,
+  Clapperboard,
+  Siren,
+  Cog,
+  Music4,
+  BicepsFlexed,
+  Wallet,
+  Ship,
+  HatGlasses,
+  HardHat,
+  BrickWall,
+} from "lucide-react";
 
 interface Statistics {
   Speed: number;
@@ -33,12 +67,56 @@ const StatBar = ({ label, value }: { label: string; value: number }) => {
       </div>
       <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-800 ring-1 ring-white/5">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.4)] transition-all duration-1000 ease-out group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]"
+          className="h-full rounded-full bg-linear-to-r from-blue-600 to-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.4)] transition-all duration-1000 ease-out group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]"
           style={{ width: `${percentage}%` }}
         />
       </div>
     </div>
   );
+};
+
+const getBehaviorIcon = (behavior: string) => {
+  const size = 14;
+  const b = behavior.toLowerCase();
+
+  if (b.includes("jet") || b.includes("rocket")) return <Plane size={size} />;
+  if (b.includes("lightning")) return <Zap size={size} />;
+  if (b.includes("poacher")) return <Bird size={size} />;
+  if (b.includes("architect")) return <TriangleRight size={size} />;
+  if (b.includes("speedster")) return <Car size={size} />;
+  if (b.includes("gatecrasher")) return <TriangleAlert size={size} />;
+  if (b.includes("hero")) return <Star size={size} />;
+  if (b.includes("thunder")) return <CloudRain size={size} />;
+  if (b.includes("invader")) return <Ghost size={size} />;
+  if (b.includes("finisher")) return <Flag size={size} />;
+  if (b.includes("infiltrator")) return <Skull size={size} />;
+  if (b.includes("prowler")) return <Panda size={size} />;
+  if (b.includes("intruder")) return <Siren size={size} />;
+  if (b.includes("composer")) return <Music4 size={size} />;
+  if (b.includes("juggernaut")) return <BicepsFlexed size={size} />;
+  if (b.includes("pickpocket")) return <Wallet size={size} />;
+  if (b.includes("voyager")) return <Ship size={size} />;
+  if (b.includes("villain")) return <HatGlasses size={size} />;
+  if (b.includes("protector")) return <HardHat size={size} />;
+  if (b.includes("warrior")) return <Swords size={size} />;
+  if (b.includes("gk-stopper")) return <BrickWall size={size} />;
+  if (b.includes("bulldozer")) return <Forklift size={size} />;
+  if (b.includes("guard") || b.includes("commander"))
+    return <Shield size={size} />;
+  if (b.includes("hitman") || b.includes("marksman"))
+    return <Crosshair size={size} />;
+  if (b.includes("menace") || b.includes("raider"))
+    return <Swords size={size} />;
+  if (b.includes("wizard") || b.includes("magician"))
+    return <Wand2 size={size} />;
+  if (b.includes("hammer")) return <Hammer size={size} />;
+  if (b.includes("explorer")) return <Map size={size} />;
+  if (b.includes("engine")) return <Cog size={size} />;
+  if (b.includes("producer")) return <Clapperboard size={size} />;
+  if (b.includes("major")) return <Medal size={size} />;
+  if (b.includes("judge")) return <Scale size={size} />;
+
+  return <User size={size} />;
 };
 
 const PlayerCard: React.FC<PlayerCardProps> = ({ name, data }) => {
@@ -56,15 +134,16 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ name, data }) => {
           <h2 className="text-3xl font-black uppercase tracking-tighter text-white drop-shadow-sm">
             {name}
           </h2>
-          <div className="mt-2 inline-flex items-center rounded-md bg-blue-500/10 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-blue-400 ring-1 ring-inset ring-blue-500/20 transition-colors group-hover:bg-blue-500/20 group-hover:text-blue-300">
+          <div className="mt-2 inline-flex items-center gap-1.5 rounded-md bg-blue-500/10 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-blue-400 ring-1 ring-inset ring-blue-500/20 transition-colors group-hover:bg-blue-500/20 group-hover:text-blue-300">
+            {getBehaviorIcon(behavior)}
             {behavior}
           </div>
         </div>
 
         {/* Level Badge */}
         <div className="relative flex h-12 w-12 items-center justify-center">
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-600 shadow-lg rotate-3 group-hover:rotate-6 transition-transform" />
-          <div className="absolute inset-[2px] rounded-[10px] bg-slate-900 flex items-center justify-center">
+          <div className="absolute inset-0 rounded-xl bg-linear-to-br from-yellow-400 to-amber-600 shadow-lg rotate-3 group-hover:rotate-6 transition-transform" />
+          <div className="absolute inset-0.5 rounded-[10px] bg-slate-900 flex items-center justify-center">
             <span className="text-xl font-black text-white">{level}</span>
           </div>
         </div>
@@ -74,7 +153,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ name, data }) => {
       <div className="relative z-10 flex flex-1 flex-col px-6 pb-6">
         <div className="mb-6 min-h-[12]">
           <p className="text-sm font-medium leading-relaxed text-gray-400 italic border-l-2 border-blue-500/30 pl-3">
-            "{description}"
+            {description}
           </p>
         </div>
 
