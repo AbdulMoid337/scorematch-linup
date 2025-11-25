@@ -726,15 +726,15 @@ export const players = [
 
     johnson: {
       behavior: "Judge",
-      level: 8,
+      level: 10,
       description: "The do-it all player, with no weaknesses and no equal.",
       statistics: {
-        Speed: 25,
-        Height: 26,
-        Strength: 26,
-        Power: 26,
-        Skill: 26,
-        Response: 34,
+        Speed: 30,
+        Height: 30,
+        Strength: 30,
+        Power: 30,
+        Skill: 30,
+        Response: 40,
       },
     },
 
@@ -812,16 +812,16 @@ export const players = [
     },
     Lee: {
       behavior: "Maestro",
-      level: 8,
+      level: 11,
       description:
-        "Dynamic runs, crunching tackles, cool control and punishing speed.",
+        "Hesitant to shoot, but he has the technique, vision and speed to break up defences.",
       statistics: {
-        Speed: 39,
-        Height: 26,
-        Strength: 21,
-        Power: 8,
-        Skill: 17,
-        Response: 30,
+        Speed: 48,
+        Height: 11,
+        Strength: 11,
+        Power: 48,
+        Skill: 48,
+        Response: 11,
       },
     },
 
