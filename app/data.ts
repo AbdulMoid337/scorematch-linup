@@ -410,29 +410,29 @@ export const players = [
 
     horvath: {
       behavior: "Commander",
-      level: 10,
+      level: 11,
       description:
         "Exellent leader of the game. Swoops in at the crucial time with calculated force.",
       statistics: {
-        Speed: 20,
+        Speed: 24,
         Height: 50,
-        Strength: 40,
-        Power: 5,
-        Skill: 0,
+        Strength: 45,
+        Power: 7,
+        Skill: 1,
         Response: 50,
       },
     },
     segura: {
       behavior: "Commander",
-      level: 10,
+      level: 11,
       description:
         "Exellent leader of the game. Swoops in at the crucial time with calculated force.",
       statistics: {
-        Speed: 20,
+        Speed: 24,
         Height: 50,
-        Strength: 40,
-        Power: 5,
-        Skill: 0,
+        Strength: 45,
+        Power: 7,
+        Skill: 1,
         Response: 50,
       },
     },
@@ -911,32 +911,33 @@ export const players = [
         Response: 40,
       },
     },
-    Lopez: {
-      behavior: "Gk-stopper",
-      level: 10,
-      description:
-        "This goalkeeper is well balanced. He is both adventurous and reliable",
-      statistics: {
-        Speed: 25,
-        Height: 35,
-        Strength: 25,
-        Power: 40,
-        Skill: 40,
-        Response: 40,
-      },
-    },
+
     Romereo: {
       behavior: "Gk-stopper",
-      level: 10,
+      level: 11,
       description:
-        "This goalkeeper is well balanced. He is both adventurous and reliable",
+        "Reliable keeper with safe hands. You can trust he'll make the right decision!",
       statistics: {
         Speed: 25,
-        Height: 35,
-        Strength: 25,
-        Power: 40,
-        Skill: 40,
-        Response: 40,
+        Height: 50,
+        Strength: 36,
+        Power: 50,
+        Skill: 50,
+        Response: 43,
+      },
+    },
+    Lopez: {
+      behavior: "Gk-stopper",
+      level: 11,
+      description:
+        "Reliable keeper with safe hands. You can trust he'll make the right decision!",
+      statistics: {
+        Speed: 25,
+        Height: 50,
+        Strength: 36,
+        Power: 50,
+        Skill: 50,
+        Response: 43,
       },
     },
   },
