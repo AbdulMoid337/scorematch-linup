@@ -682,16 +682,16 @@ export const players = [
 
     traore: {
       behavior: "Finisher",
-      level: 6,
+      level: 11,
       description:
         "What they lack in pace and stature, the make up with deadly finishing - the last word in attack.",
       statistics: {
-        Speed: 6,
-        Height: 7,
-        Strength: 7,
-        Power: 32,
-        Skill: 32,
-        Response: 33,
+        Speed: 11,
+        Height: 11,
+        Strength: 11,
+        Power: 45,
+        Skill: 45,
+        Response: 45,
       },
     },
     Benitez: {
